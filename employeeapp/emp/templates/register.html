@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+    <div class="container d-flex flex-column border shadow align-content-center text-center">
+        <h1 class="text -success">Employee Registration</h1>
+        <form action="" method="POST">
+           {% csrf_token %}
+           <label for=""class="form-label" >Name:</label>
+           <input type="text" name="name" class="form-control" ><br>
+           <label for=""class="form-label">Salary:</label>
+           <input type="text" name="salary" class="form-control"><br>
+           <label for=""class="form-label">Designation:</label>
+           <input type="text" name="designation" class="form-control" ><br>
+           <label for=""class="form-label">Email:</label>
+           <input type="text" name="Email" class="form-control"><br>
+           <input type="submit" class="btn btn-success">
+        </form>
+
+    </div>
+
+
+   
+
+ 
+  </body>
+</html>
